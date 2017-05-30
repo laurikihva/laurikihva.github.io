@@ -1,9 +1,23 @@
-.me img {
+.wobble {
+  height: auto;
+  width: 8em;
+  background-color: #fff;
+  padding: 0.1em;
+  margin: 1em auto;
+  border-radius: 150px 450px 250px 450px /
+                 150px 450px 250px 450px;
+  animation: wobble 18s cubic-bezier(0.215, 0.61, 0.355, 1) alternate infinite;
   float: left;
   shape-outside: circle(50%);
-  /*border: 1px solid white;*/
-  border-radius: 50%;
-  width: 180px;
-  height: 240px;
-  margin: 0 13px 0 0;
+}
+
+@keyframes wobble {
+  50% {
+    border-radius: 750px 550px 350px 750px /
+                   350px 750px 550px 450px;
+  }
+  100% {
+    border-radius: 350px 450px 250px 450px /
+                 350px 450px 250px 450px;
+  }
 }
