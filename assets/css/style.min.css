@@ -9,6 +9,7 @@
   animation: wobble 18s cubic-bezier(0.215, 0.61, 0.355, 1) alternate infinite;
   float: left;
   shape-outside: circle(50%);
+  margin-right: 10px;
 }
 
 @keyframes wobble {
