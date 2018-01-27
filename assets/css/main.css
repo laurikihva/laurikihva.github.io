@@ -569,6 +569,12 @@
 		dl dd {
 			margin-left: 2rem;
 		}
+		
+		dd.nested {
+			margin-left: 3.5rem;
+			display: list-item;
+			list-style-type: disc;
+		}
 
 /* BG */
 
